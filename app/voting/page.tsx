@@ -70,13 +70,10 @@ export default function VotingPage() {
                 <th className="border border-gray-300 p-2">조합원 번호</th>
                 <th
                   className="border border-gray-300 p-2 text-center"
-                  colSpan={2}
+                  colSpan={5}
                 >
                   조합원
                 </th>
-                <th className="border border-gray-300 p-2">주소</th>
-                <th className="border border-gray-300 p-2">연락처1</th>
-                <th className="border border-gray-300 p-2">등록수</th>
                 <th className="border border-gray-300 p-2">공동빈번</th>
                 <th className="border border-gray-300 p-2">입업근대</th>
                 <th className="border border-gray-300 p-2">수임권일</th>
@@ -101,9 +98,9 @@ export default function VotingPage() {
                 <th className="border border-gray-300 p-1"></th>
                 <th className="border border-gray-300 p-1">성명</th>
                 <th className="border border-gray-300 p-1">생년월일</th>
-                <th className="border border-gray-300 p-1"></th>
-                <th className="border border-gray-300 p-1"></th>
-                <th className="border border-gray-300 p-1"></th>
+                <th className="border border-gray-300 p-1">주소</th>
+                <th className="border border-gray-300 p-1">연락처1</th>
+                <th className="border border-gray-300 p-1">동호수</th>
                 <th className="border border-gray-300 p-1"></th>
                 <th className="border border-gray-300 p-1"></th>
                 <th className="border border-gray-300 p-1"></th>
