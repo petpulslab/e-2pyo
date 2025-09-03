@@ -74,16 +74,16 @@ export default function VotingPage() {
                 >
                   조합원
                 </th>
-                <th className="border border-gray-300 p-2">공동빈번</th>
-                <th className="border border-gray-300 p-2">입업근대</th>
-                <th className="border border-gray-300 p-2">수임권일</th>
-                <th className="border border-gray-300 p-2">공정이부</th>
-                <th className="border border-gray-300 p-2">여기위무</th>
+                <th className="border border-gray-300 p-2">공부면적</th>
+                <th className="border border-gray-300 p-2">편입면적</th>
+                <th className="border border-gray-300 p-2">소유면적</th>
+                <th className="border border-gray-300 p-2">공유유무</th>
+                <th className="border border-gray-300 p-2">허가유무</th>
                 <th
                   className="border border-gray-300 p-2 text-center"
                   colSpan={2}
                 >
-                  관리내역
+                  권리내역
                 </th>
                 <th
                   className="border border-gray-300 p-2 text-center"
@@ -106,7 +106,7 @@ export default function VotingPage() {
                 <th className="border border-gray-300 p-1"></th>
                 <th className="border border-gray-300 p-1"></th>
                 <th className="border border-gray-300 p-1"></th>
-                <th className="border border-gray-300 p-1">도지</th>
+                <th className="border border-gray-300 p-1">토지</th>
                 <th className="border border-gray-300 p-1 text-right">
                   60,143.96
                 </th>
