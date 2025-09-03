@@ -1,10 +1,14 @@
+import Link from "next/link";
+
 export default function Header() {
   return (
     <header className="bg-gradient-to-r from-blue-600 to-blue-500 text-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center py-4">
           <div className="flex items-center">
-            <h1 className="text-xl font-bold">E-2pyo 솔루션홈</h1>
+            <Link href="/">
+              <h1 className="text-xl font-bold cursor-pointer hover:text-blue-100 transition-colors">E-2pyo 솔루션홈</h1>
+            </Link>
           </div>
           
           <nav className="hidden md:flex space-x-8">
