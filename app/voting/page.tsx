@@ -80,10 +80,7 @@ export default function VotingPage() {
                 >
                   권리내역
                 </th>
-                <th
-                  className="border border-gray-300 p-2 text-center"
-                  colSpan={2}
-                >
+                <th className="border border-gray-300 p-2 text-center">
                   대표자 선임여부
                 </th>
               </tr>
@@ -102,15 +99,9 @@ export default function VotingPage() {
                 >
                   토지
                 </th>
-                <th className="border border-gray-300 p-1">공유유무</th>
+                <th className="border border-gray-300 p-1">공유여부</th>
                 <th className="border border-gray-300 p-1">허가유무</th>
-                <th className="border border-gray-300 p-1">토지</th>
-                <th className="border border-gray-300 p-1 text-right">
-                  60,143.96
-                </th>
-                <th className="border border-gray-300 p-1 text-right">
-                  59,958.12
-                </th>
+                <th className="border border-gray-300 p-1"></th>
               </tr>
               <tr className="bg-gray-100 text-black">
                 <th className="border border-gray-300 p-1"></th>
@@ -124,7 +115,6 @@ export default function VotingPage() {
                 <th className="border border-gray-300 p-1">공부면적</th>
                 <th className="border border-gray-300 p-1">편입면적</th>
                 <th className="border border-gray-300 p-1">소유면적</th>
-                <th className="border border-gray-300 p-1"></th>
                 <th className="border border-gray-300 p-1"></th>
                 <th className="border border-gray-300 p-1"></th>
                 <th className="border border-gray-300 p-1"></th>
@@ -151,8 +141,6 @@ export default function VotingPage() {
                 <td className="border border-gray-300 p-2"></td>
                 <td className="border border-gray-300 p-2"></td>
                 <td className="border border-gray-300 p-2"></td>
-                <td className="border border-gray-300 p-2"></td>
-                <td className="border border-gray-300 p-2"></td>
               </tr>
               <tr>
                 <td className="border border-gray-300 p-2 text-center">
@@ -171,9 +159,7 @@ export default function VotingPage() {
                 <td className="border border-gray-300 p-2"></td>
                 <td className="border border-gray-300 p-2"></td>
                 <td className="border border-gray-300 p-2"></td>
-                <td className="border border-gray-300 p-2"></td>
                 <td className="border border-gray-300 p-2 text-center">대표</td>
-                <td className="border border-gray-300 p-2"></td>
               </tr>
               <tr>
                 <td className="border border-gray-300 p-2 text-center">
@@ -182,7 +168,6 @@ export default function VotingPage() {
                 <td className="border border-gray-300 p-2 text-center">3</td>
                 <td className="border border-gray-300 p-2 text-center"></td>
                 <td className="border border-gray-300 p-2">박**</td>
-                <td className="border border-gray-300 p-2"></td>
                 <td className="border border-gray-300 p-2"></td>
                 <td className="border border-gray-300 p-2"></td>
                 <td className="border border-gray-300 p-2"></td>
@@ -234,7 +219,6 @@ export default function VotingPage() {
                 <td className="border border-gray-300 p-2"></td>
                 <td className="border border-gray-300 p-2"></td>
                 <td className="border border-gray-300 p-2"></td>
-                <td className="border border-gray-300 p-2"></td>
               </tr>
               <tr>
                 <td className="border border-gray-300 p-2 text-center">
@@ -242,7 +226,6 @@ export default function VotingPage() {
                 </td>
                 <td className="border border-gray-300 p-2 text-center">134</td>
                 <td className="border border-gray-300 p-2 text-center"></td>
-                <td className="border border-gray-300 p-2"></td>
                 <td className="border border-gray-300 p-2"></td>
                 <td className="border border-gray-300 p-2"></td>
                 <td className="border border-gray-300 p-2"></td>
@@ -275,8 +258,6 @@ export default function VotingPage() {
                 <td className="border border-gray-300 p-2"></td>
                 <td className="border border-gray-300 p-2"></td>
                 <td className="border border-gray-300 p-2 text-center">대</td>
-                <td className="border border-gray-300 p-2"></td>
-                <td className="border border-gray-300 p-2"></td>
               </tr>
               <tr>
                 <td className="border border-gray-300 p-2 text-center">
@@ -284,7 +265,6 @@ export default function VotingPage() {
                 </td>
                 <td className="border border-gray-300 p-2 text-center">136</td>
                 <td className="border border-gray-300 p-2 text-center"></td>
-                <td className="border border-gray-300 p-2"></td>
                 <td className="border border-gray-300 p-2"></td>
                 <td className="border border-gray-300 p-2"></td>
                 <td className="border border-gray-300 p-2"></td>
