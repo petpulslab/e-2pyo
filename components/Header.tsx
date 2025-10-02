@@ -28,8 +28,6 @@ export default function Header() {
                 <Link href="/usage-guide/method" className="text-white font-medium hover:text-white/90 transition-colors whitespace-nowrap mb-4">이용안내</Link>
                 <div className="absolute top-8 flex flex-col items-center gap-2 text-sm text-white/85 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200">
                   <Link href="/usage-guide/method" className="hover:text-white/90 transition-colors whitespace-nowrap">이용 방법 안내</Link>
-                  <Link href="/usage-guide/process" className="hover:text-white/90 transition-colors whitespace-nowrap">이용 절차 안내</Link>
-                  <Link href="/usage-guide/pricing" className="hover:text-white/90 transition-colors whitespace-nowrap">이용 수수료 안내</Link>
                 </div>
               </div>
 

@@ -1,5 +1,4 @@
 import Image from "next/image";
-import Link from "next/link";
 
 export default function FeatureSection() {
   return (
@@ -15,11 +14,9 @@ export default function FeatureSection() {
               <br />
               선거 개설부터 개표 과정을 공정하고 정확하게 안내해요
             </p>
-            <Link href="/voting">
-              <button className="bg-gradient-to-r from-[#3E68CA] to-[#2A4D9C] text-white px-8 py-4 rounded-full font-semibold text-lg hover:shadow-[0_0_20px_rgba(62,104,202,0.4)] transition-all shadow-lg">
-                체험하기
-              </button>
-            </Link>
+            <button className="bg-gradient-to-r from-[#3E68CA] to-[#2A4D9C] text-white px-8 py-4 rounded-full font-semibold text-lg hover:shadow-[0_0_20px_rgba(62,104,202,0.4)] transition-all shadow-lg">
+              체험하기
+            </button>
           </div>
 
           <div className="relative flex justify-center">

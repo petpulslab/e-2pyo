@@ -7,14 +7,16 @@ export default function Hero() {
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div className="space-y-8">
             <h1 className="text-4xl lg:text-5xl font-bold leading-tight drop-shadow-[0_0_30px_rgba(62,104,202,0.5)]">
-              이제 투표도 온라인으로
+              주택 조합 운영,
               <br />
-              빠르고 간편하게 <span className="text-white drop-shadow-[0_0_20px_rgba(255,255,255,0.8)]">E-2Pyo</span>
+              이제 온라인으로 간편하게
             </h1>
             <p className="text-lg text-white/90 leading-relaxed">
-              안전하고 편리한 온-오프라인 투표 시스템
+              재건축·재개발·리모델링 조합을 위한 전문 투표 플랫폼
               <br />
-              선거 개설부터 개표 과정을 공정하고 정확하게 안내해요
+              주거와 건물을 연결하는 사람 중심의 소통 가치를 실현합니다
+              <br />
+              안전하고 투명한 의사결정 프로세스를 경험하세요
             </p>
             <button className="bg-white text-[#3E68CA] px-8 py-4 rounded-full font-semibold text-lg hover:bg-white/90 hover:shadow-[0_0_20px_rgba(62,104,202,0.6)] transition-all shadow-lg">
               제안서 다운로드
