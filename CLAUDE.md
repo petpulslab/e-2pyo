@@ -59,8 +59,8 @@ The site follows a standard Next.js App Router structure with four main sections
 ### Design System
 
 **Color Palette:**
-- Primary: `#3E68CA` (blue)
-- Secondary: `#2A4D9C` (darker blue)
+- Primary: `#588cfe` (blue)
+- Secondary: `#3366E6` (darker blue)
 - Dark backgrounds: `#1a1a1a`, `#2a2a2a`
 - Status indicators: Red badges for "중요" (important)
 

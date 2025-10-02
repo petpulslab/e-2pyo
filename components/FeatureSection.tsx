@@ -5,7 +5,7 @@ export default function FeatureSection() {
     <section className="bg-white py-20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
-          <div className="space-y-6 p-8 rounded-2xl bg-gradient-to-br from-[#3E68CA]/10 to-transparent border-2 border-[#3E68CA]/20 hover:border-[#3E68CA]/40 transition-all">
+          <div className="space-y-6 p-8 rounded-2xl bg-gradient-to-br from-[#588cfe]/10 to-transparent border-2 border-[#588cfe]/20 hover:border-[#588cfe]/40 transition-all">
             <h2 className="text-3xl lg:text-4xl font-bold text-gray-900">
               온라인 전자투표 시스템
             </h2>
@@ -14,7 +14,7 @@ export default function FeatureSection() {
               <br />
               선거 개설부터 개표 과정을 공정하고 정확하게 안내해요
             </p>
-            <button className="bg-gradient-to-r from-[#3E68CA] to-[#2A4D9C] text-white px-8 py-4 rounded-full font-semibold text-lg hover:shadow-[0_0_20px_rgba(62,104,202,0.4)] transition-all shadow-lg">
+            <button className="bg-gradient-to-r from-[#588cfe] to-[#3366E6] text-white px-8 py-4 rounded-full font-semibold text-lg hover:shadow-[0_0_20px_rgba(88,140,254,0.4)] transition-all shadow-lg">
               체험하기
             </button>
           </div>

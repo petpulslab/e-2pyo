@@ -64,7 +64,7 @@ export default function UsageMethodPage() {
 
                   <div className="flex gap-8 items-start">
                     {/* Number Circle */}
-                    <div className="flex-shrink-0 w-20 h-20 rounded-full bg-[#3E68CA] text-white flex items-center justify-center text-2xl font-bold">
+                    <div className="flex-shrink-0 w-20 h-20 rounded-full bg-[#588cfe] text-white flex items-center justify-center text-2xl font-bold">
                       {step.number}
                     </div>
 
