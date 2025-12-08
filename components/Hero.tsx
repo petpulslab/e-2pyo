@@ -2,11 +2,11 @@ import Image from "next/image";
 
 export default function Hero() {
   return (
-    <section className="relative bg-gradient-to-br from-[#588cfe] via-[#3d5a9e] to-black text-white py-20 overflow-hidden">
+    <section className="relative text-white py-20 overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div className="space-y-8">
-            <h1 className="text-4xl lg:text-5xl font-bold leading-tight drop-shadow-[0_0_30px_rgba(88,140,254,0.5)]">
+            <h1 className="text-4xl lg:text-5xl font-bold leading-tight drop-shadow-[0_0_30px_rgba(255,255,255,0.3)]">
               주택 조합 운영,
               <br />
               이제 온라인으로 간편하게
@@ -18,18 +18,18 @@ export default function Hero() {
               <br />
               안전하고 투명한 의사결정 프로세스를 경험하세요
             </p>
-            <button className="bg-white text-[#588cfe] px-8 py-4 rounded-full font-semibold text-lg hover:bg-white/90 hover:shadow-[0_0_20px_rgba(88,140,254,0.6)] transition-all shadow-lg">
+            <button className="bg-white text-blue-600 px-8 py-4 rounded-full font-semibold text-lg hover:bg-white/90 transition-all shadow-lg">
               제안서 다운로드
             </button>
           </div>
 
           <div className="relative lg:pl-8 flex justify-center">
             <Image
-              src="/images/hero-mockups.png"
-              alt="E-2Pyo 모바일 앱 화면 목업 - 투표 및 대시보드"
+              src="/images/hero-background.png"
+              alt="Modern cityscape with impressive architecture"
               width={600}
               height={500}
-              className="max-w-full h-auto"
+              className="max-w-full h-auto rounded-lg shadow-2xl"
               priority
             />
           </div>
