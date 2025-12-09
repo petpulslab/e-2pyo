@@ -13,7 +13,9 @@ export default function MemberManagementPage() {
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
               <h1 className="text-5xl lg:text-6xl font-bold mb-6 leading-tight">
-                조합원 명부 관리<br />시스템
+                조합원 명부 관리
+                <br />
+                시스템
               </h1>
             </div>
             <div className="flex justify-center lg:justify-end">
@@ -41,13 +43,28 @@ export default function MemberManagementPage() {
               <div className="flex gap-4">
                 <div className="flex-shrink-0 w-2 h-2 rounded-full bg-gray-900 mt-2"></div>
                 <p className="text-lg lg:text-xl text-gray-700 leading-relaxed">
-                  권리 내역부터 대표자 선임 변경까지 손쉽고 빠른 명부 등록과 변경 기능 제공
+                  조합원 명부 작성과 관리의 끝판왕
                 </p>
               </div>
               <div className="flex gap-4">
                 <div className="flex-shrink-0 w-2 h-2 rounded-full bg-gray-900 mt-2"></div>
                 <p className="text-lg lg:text-xl text-gray-700 leading-relaxed">
-                  조합원 명부에 따른 정확한 우편 발송과 총회 참석 확인을 통한 비용 지급, 계좌 관리 연동 기능
+                  파일 양식 다운로드, 입력으로 한번에 끝내는 조합원 등록과 변경
+                  가능
+                </p>
+              </div>
+              <div className="flex gap-4">
+                <div className="flex-shrink-0 w-2 h-2 rounded-full bg-gray-900 mt-2"></div>
+                <p className="text-lg lg:text-xl text-gray-700 leading-relaxed">
+                  권리 내역부터 대표자 선임 변경까지 손쉽고 빠른 명부 등록과
+                  변경 기능 제공
+                </p>
+              </div>
+              <div className="flex gap-4">
+                <div className="flex-shrink-0 w-2 h-2 rounded-full bg-gray-900 mt-2"></div>
+                <p className="text-lg lg:text-xl text-gray-700 leading-relaxed">
+                  조합원 명부에 따른 정확한 우편 발송과 총회 참석 확인을 통한
+                  비용 지급, 계좌 관리 연동 기능
                 </p>
               </div>
             </div>
@@ -59,10 +76,17 @@ export default function MemberManagementPage() {
       <section className="bg-[#1a1a1a] text-white py-20 lg:py-28">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-4xl">
-            <h2 className="text-3xl lg:text-5xl font-bold mb-6 leading-tight">
-              보안 유지를 위한<br />
+            <h2 className="text-3xl lg:text-5xl font-bold mb-8 leading-tight">
+              보안 유지를 위한
+              <br />
               고유 조합 개별 프로그램 제공
             </h2>
+            <div className="flex gap-4">
+              <div className="flex-shrink-0 w-2 h-2 rounded-full bg-white mt-2"></div>
+              <p className="text-lg lg:text-xl text-gray-300 leading-relaxed">
+                보안 서버 구축 운영 조합별 고유 프로그램 제공
+              </p>
+            </div>
           </div>
         </div>
       </section>

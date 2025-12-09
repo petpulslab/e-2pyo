@@ -19,11 +19,11 @@ export default function SmsServicePage() {
             </div>
             <div className="flex justify-center lg:justify-end">
               <Image
-                src="/images/hero-mockups.png"
-                alt="조합원 알림 문자 발송 서비스 모바일 화면"
-                width={500}
-                height={500}
-                className="max-w-full h-auto"
+                src="/images/sms-service-hero.png"
+                alt="조합원 문자 발송 서비스 및 카카오톡 알림톡 서비스"
+                width={600}
+                height={400}
+                className="max-w-full h-auto rounded-lg"
                 priority
               />
             </div>
@@ -45,6 +45,30 @@ export default function SmsServicePage() {
               <div className="flex-shrink-0 w-2 h-2 rounded-full bg-gray-900 mt-2"></div>
               <p className="text-lg lg:text-xl text-gray-700 leading-relaxed">
                 예약 발송, 선택 발송, 발송 이력 관리 등 관리 업무 최적화
+              </p>
+            </div>
+            <div className="flex gap-4">
+              <div className="flex-shrink-0 w-2 h-2 rounded-full bg-gray-900 mt-2"></div>
+              <p className="text-lg lg:text-xl text-gray-700 leading-relaxed">
+                조합원 명부와 연동된 기능성 문자 메시지 서비스로 시간과 노력 최적화
+              </p>
+            </div>
+            <div className="flex gap-4">
+              <div className="flex-shrink-0 w-2 h-2 rounded-full bg-gray-900 mt-2"></div>
+              <p className="text-lg lg:text-xl text-gray-700 leading-relaxed">
+                조합의 일상적인 정보 제공 문자 알림 서비스
+              </p>
+            </div>
+            <div className="flex gap-4">
+              <div className="flex-shrink-0 w-2 h-2 rounded-full bg-gray-900 mt-2"></div>
+              <p className="text-lg lg:text-xl text-gray-700 leading-relaxed">
+                조합원 정보 제공 알림 메시지 서비스
+              </p>
+            </div>
+            <div className="flex gap-4">
+              <div className="flex-shrink-0 w-2 h-2 rounded-full bg-gray-900 mt-2"></div>
+              <p className="text-lg lg:text-xl text-gray-700 leading-relaxed">
+                주간 보고, 월간 보고 알림 서비스
               </p>
             </div>
           </div>

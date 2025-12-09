@@ -9,7 +9,7 @@ export default function Footer() {
           <div>
             <h3 className="text-white text-lg font-bold mb-4">회사 정보</h3>
             <div className="space-y-2 text-sm">
-              <p className="font-semibold text-white">주식회사 알엔스엠피</p>
+              <p className="font-semibold text-white">주식회사 해내리</p>
               <p>대표자: 김현진</p>
               <p>개인정보 책임자: 김현진</p>
               <p>주소: 서울 중랑구 마장동</p>
@@ -32,7 +32,7 @@ export default function Footer() {
         </div>
 
         <div className="border-t border-gray-700 mt-8 pt-8 text-center text-sm">
-          <p>&copy; 2024 주식회사 알엔스엠피. All rights reserved.</p>
+          <p>&copy; 2025 주식회사 해내리. All rights reserved.</p>
         </div>
       </div>
     </footer>

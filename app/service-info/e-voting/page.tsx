@@ -37,6 +37,90 @@ export default function EVotingPage() {
         </div>
       </section>
 
+      {/* SMS Service Section */}
+      <section className="bg-gray-50 py-20 lg:py-28">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="max-w-4xl mb-12">
+            <h2 className="text-3xl lg:text-5xl font-bold text-gray-900 mb-6">
+              조합원 명부와 연동된 문자 메시지 서비스
+            </h2>
+            <p className="text-lg lg:text-xl text-gray-700 leading-relaxed">
+              조합원 명부와 연동된 기능성 문자 메시지 서비스로 시간과 노력 최적화
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-2 gap-8">
+            <div className="bg-white p-8 rounded-lg shadow-sm">
+              <h3 className="text-xl font-bold text-gray-900 mb-4">맞춤 대량 문자 서비스</h3>
+              <ul className="space-y-3 text-gray-700">
+                <li className="flex items-start">
+                  <span className="w-1.5 h-1.5 bg-[#588cfe] rounded-full mt-2 mr-3 flex-shrink-0"></span>
+                  <span>총회 안내</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="w-1.5 h-1.5 bg-[#588cfe] rounded-full mt-2 mr-3 flex-shrink-0"></span>
+                  <span>조합원 공지 알림</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="w-1.5 h-1.5 bg-[#588cfe] rounded-full mt-2 mr-3 flex-shrink-0"></span>
+                  <span>대의원 알림</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="w-1.5 h-1.5 bg-[#588cfe] rounded-full mt-2 mr-3 flex-shrink-0"></span>
+                  <span>주간 업무 보고</span>
+                </li>
+              </ul>
+            </div>
+
+            <div className="bg-white p-8 rounded-lg shadow-sm">
+              <h3 className="text-xl font-bold text-gray-900 mb-4">관리 업무 최적화</h3>
+              <ul className="space-y-3 text-gray-700">
+                <li className="flex items-start">
+                  <span className="w-1.5 h-1.5 bg-[#588cfe] rounded-full mt-2 mr-3 flex-shrink-0"></span>
+                  <span>예약 발송</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="w-1.5 h-1.5 bg-[#588cfe] rounded-full mt-2 mr-3 flex-shrink-0"></span>
+                  <span>선택 발송</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="w-1.5 h-1.5 bg-[#588cfe] rounded-full mt-2 mr-3 flex-shrink-0"></span>
+                  <span>발송 이력 관리</span>
+                </li>
+              </ul>
+            </div>
+
+            <div className="bg-white p-8 rounded-lg shadow-sm">
+              <h3 className="text-xl font-bold text-gray-900 mb-4">일상적인 정보 제공 서비스</h3>
+              <ul className="space-y-3 text-gray-700">
+                <li className="flex items-start">
+                  <span className="w-1.5 h-1.5 bg-[#588cfe] rounded-full mt-2 mr-3 flex-shrink-0"></span>
+                  <span>조합의 일상적인 정보 제공 문자 알림 서비스</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="w-1.5 h-1.5 bg-[#588cfe] rounded-full mt-2 mr-3 flex-shrink-0"></span>
+                  <span>조합원 정보 제공 알림 메시지 서비스</span>
+                </li>
+              </ul>
+            </div>
+
+            <div className="bg-white p-8 rounded-lg shadow-sm">
+              <h3 className="text-xl font-bold text-gray-900 mb-4">보고 알림 서비스</h3>
+              <ul className="space-y-3 text-gray-700">
+                <li className="flex items-start">
+                  <span className="w-1.5 h-1.5 bg-[#588cfe] rounded-full mt-2 mr-3 flex-shrink-0"></span>
+                  <span>주간 보고 알림 서비스</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="w-1.5 h-1.5 bg-[#588cfe] rounded-full mt-2 mr-3 flex-shrink-0"></span>
+                  <span>월간 보고 알림 서비스</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Development Notice Section */}
       <section className="bg-gray-50 py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
