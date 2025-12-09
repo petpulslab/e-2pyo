@@ -67,7 +67,7 @@ export default function ResourcesPage() {
               Downloads
             </div>
             <h1 className="text-4xl lg:text-6xl font-bold mb-6 leading-tight text-slate-900">
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-purple-600">
+              <span className="text-blue-600">
                 자료실
               </span>
             </h1>

@@ -18,7 +18,7 @@ export default function ServiceApplicationFormPage() {
               Application
             </div>
             <h1 className="text-4xl lg:text-6xl font-bold mb-6 leading-tight text-slate-900">
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-purple-600">
+              <span className="text-blue-600">
                 서비스 이용 신청
               </span>
             </h1>
