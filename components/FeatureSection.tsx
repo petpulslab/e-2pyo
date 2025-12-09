@@ -2,31 +2,31 @@ import Image from "next/image";
 
 export default function FeatureSection() {
   return (
-    <section className="py-20">
+    <section className="py-24 lg:py-32 bg-[#0626AA]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="bg-white rounded-2xl shadow-xl overflow-hidden">
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
-            <div className="space-y-6 p-12">
-              <h2 className="text-3xl lg:text-4xl font-bold text-gray-900">
-                온라인 전자투표 시스템
-              </h2>
-              <p className="text-lg text-gray-600 leading-relaxed">
-                안전하고 편리한 온-오프라인 투표 시스템
-                <br />
-                선거 개설부터 개표 과정을 공정하고 정확하게 안내해요
-              </p>
-              <button className="bg-gradient-to-r from-blue-600 to-blue-500 text-white px-8 py-4 rounded-full font-semibold text-lg hover:shadow-lg transition-all">
-                체험하기
-              </button>
-            </div>
+        <div className="grid lg:grid-cols-2 gap-12 items-center">
+          <div className="space-y-6">
+            <h2 className="text-3xl lg:text-4xl font-bold text-white">
+              온라인 전자투표 시스템
+            </h2>
+            <p className="text-lg text-white/80 leading-relaxed">
+              안전하고 편리한 온-오프라인 투표 시스템
+              <br />
+              선거 개설부터 개표 과정을 공정하고 정확하게 안내해요
+            </p>
+            <button className="bg-white text-[#0626AA] px-8 py-4 rounded-full font-semibold text-lg hover:bg-white/90 transition-all">
+              체험하기
+            </button>
+          </div>
 
-            <div className="p-8 flex justify-center items-center">
+          <div className="flex justify-center items-center">
+            <div className="bg-white rounded-2xl shadow-xl p-4">
               <Image
                 src="/images/voting-people.png"
                 alt="온라인 전자투표 시스템을 사용하는 사람들 일러스트"
                 width={500}
                 height={400}
-                className="max-w-full h-auto"
+                className="max-w-full h-auto rounded-lg"
               />
             </div>
           </div>
