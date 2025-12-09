@@ -48,72 +48,58 @@ export default function FaqPage() {
   ];
 
   return (
-    <div className="min-h-screen flex flex-col">
+    <div className="min-h-screen bg-white">
       <Header />
 
-      {/* Hero Section */}
-      <section className="bg-[#1a1a1a] text-white py-16 lg:py-20">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center">
-            <h1 className="text-4xl lg:text-5xl font-bold mb-4">
-              FAQ
+      {/* Hero Section (Light Theme) */}
+      <section className="bg-white pt-32 pb-20 relative overflow-hidden">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+          <div className="max-w-4xl mx-auto text-center">
+            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-50 text-blue-600 text-sm font-medium border border-blue-100 mb-6">
+              <span className="w-2 h-2 rounded-full bg-blue-500 animate-pulse"></span>
+              Q&A
+            </div>
+            <h1 className="text-4xl lg:text-6xl font-bold mb-6 leading-tight text-slate-900">
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-purple-600">
+                FAQ
+              </span>
             </h1>
-            <p className="text-lg text-gray-300">
-              자주 묻는 질문에 대해서 빠르게 궁금증을 해결하실 수 있습니다.
+            <p className="text-xl text-slate-600 mb-8 max-w-2xl mx-auto">
+              자주 묻는 질문을 통해 궁금증을 빠르게 해결하세요.
             </p>
           </div>
         </div>
+
+        <div className="absolute top-0 right-0 -translate-y-1/2 translate-x-1/2 w-96 h-96 bg-blue-100 rounded-full blur-3xl opacity-50 pointer-events-none" />
+        <div className="absolute bottom-0 left-0 translate-y-1/2 -translate-x-1/2 w-80 h-80 bg-purple-100 rounded-full blur-3xl opacity-50 pointer-events-none" />
       </section>
 
-      {/* FAQ List Section */}
-      <section className="bg-gray-50 py-12 lg:py-16 flex-1">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="bg-white rounded-lg shadow-lg overflow-hidden">
-            {/* Desktop Table */}
-            <div className="hidden md:block overflow-x-auto">
-              <table className="w-full">
-                <thead className="bg-gray-50 border-b-2 border-gray-200">
-                  <tr>
-                    <th className="px-6 py-4 text-left text-sm font-semibold text-gray-900">
-                      제목
-                    </th>
-                    <th className="px-6 py-4 text-center text-sm font-semibold text-gray-900 w-48">
-                      등록일
-                    </th>
-                    <th className="px-6 py-4 text-center text-sm font-semibold text-gray-900 w-32">
-                      첨부파일
-                    </th>
-                  </tr>
-                </thead>
-                <tbody className="divide-y divide-gray-200">
-                  {faqs.map((faq) => (
-                    <tr key={faq.id} className="hover:bg-gray-50 transition-colors">
-                      <td className="px-6 py-4">
-                        <span className="text-gray-900">{faq.title}</span>
-                      </td>
-                      <td className="px-6 py-4 text-center text-sm text-gray-600">
-                        {faq.date}
-                      </td>
-                      <td className="px-6 py-4 text-center text-sm text-gray-600">
-                        {faq.hasAttachment ? "📎" : ""}
-                      </td>
-                    </tr>
-                  ))}
-                </tbody>
-              </table>
-            </div>
+      {/* FAQ List Section (Dark Theme with White Box) */}
+      <section className="bg-slate-900 py-16 lg:py-24 relative overflow-hidden">
+        {/* Background Pattern */}
+        <div className="absolute inset-0 bg-white/5 pattern-grid-lg opacity-10 pointer-events-none"></div>
 
-            {/* Mobile List */}
-            <div className="md:hidden divide-y divide-gray-200">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+          <div className="bg-white rounded-3xl shadow-2xl overflow-hidden px-8 py-8">
+            <div className="space-y-4">
               {faqs.map((faq) => (
-                <div key={faq.id} className="p-4 hover:bg-gray-50 transition-colors">
-                  <div className="mb-2">
-                    <span className="text-gray-900 font-medium">{faq.title}</span>
-                  </div>
-                  <div className="flex items-center justify-between text-sm text-gray-600">
-                    <span>{faq.date}</span>
-                    {faq.hasAttachment && <span>📎</span>}
-                  </div>
+                <div key={faq.id} className="group border-b border-slate-100 last:border-0 pb-4 last:pb-0">
+                  <button className="w-full text-left flex items-start gap-4 py-4 rounded-xl hover:bg-slate-50 transition-colors px-4 -mx-4">
+                    <div className="flex-shrink-0 w-8 h-8 rounded-full bg-blue-50 text-blue-600 flex items-center justify-center font-bold text-sm mt-0.5">
+                      Q
+                    </div>
+                    <div className="flex-1">
+                      <h3 className="text-lg font-medium text-slate-900 group-hover:text-blue-600 transition-colors">
+                        {faq.title}
+                      </h3>
+                      <p className="text-sm text-slate-500 mt-2">
+                        {faq.date}
+                      </p>
+                    </div>
+                    <div className="text-slate-400 group-hover:text-blue-600 transition-colors">
+                      <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" /></svg>
+                    </div>
+                  </button>
                 </div>
               ))}
             </div>

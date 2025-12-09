@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 
 const menuItems = [
   {
@@ -39,12 +40,21 @@ const menuItems = [
 
 export default function Header() {
   return (
-    <header className="bg-transparent text-white">
+    <header className="bg-transparent text-slate-900">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center py-4">
           <div className="flex items-center">
-            <Link href="/">
-              <h1 className="text-xl font-bold cursor-pointer hover:text-white/90 transition-colors">
+            <Link href="/" className="flex items-center gap-2 group">
+              <div className="relative w-10 h-10">
+                <Image
+                  src="/images/logo.png"
+                  alt="E-2pyo Logo"
+                  fill
+                  className="object-contain"
+                  priority
+                />
+              </div>
+              <h1 className="text-xl font-bold cursor-pointer group-hover:text-blue-600 transition-colors">
                 E-2pyo 솔루션홈
               </h1>
             </Link>
@@ -55,7 +65,7 @@ export default function Header() {
               <div key={item.title} className="relative group">
                 <Link
                   href={item.href}
-                  className="text-white font-medium hover:text-white/90 transition-colors whitespace-nowrap flex items-center gap-1 py-2"
+                  className="text-slate-900 font-medium hover:text-blue-600 transition-colors whitespace-nowrap flex items-center gap-1 py-2"
                 >
                   {item.title}
                   {item.submenu && item.submenu.length > 0 && (
