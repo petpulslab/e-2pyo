@@ -38,7 +38,7 @@ export default function Hero() {
             <div className="absolute -inset-4 bg-gradient-to-r from-blue-200 to-purple-200 rounded-3xl blur-2xl opacity-0 group-hover:opacity-70 transition duration-500" />
             <div className="relative rounded-2xl overflow-hidden bg-slate-100 shadow-2xl">
               <Image
-                src="/images/hero-background.png"
+                src="/images/hero-background.webp"
                 alt="Modern cityscape with impressive architecture"
                 width={600}
                 height={500}
