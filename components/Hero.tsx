@@ -40,8 +40,8 @@ export default function Hero() {
               <Image
                 src="/images/hero-background.webp"
                 alt="Modern cityscape with impressive architecture"
-                width={600}
-                height={500}
+                width={688}
+                height={384}
                 className="max-w-full h-auto object-cover"
                 priority
               />
