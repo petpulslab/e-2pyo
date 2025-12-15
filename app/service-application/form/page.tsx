@@ -2,8 +2,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
 export default function ServiceApplicationFormPage() {
-  // 네이버폼 URL을 여기에 입력하세요
-  const naverFormUrl = "";
+
 
   return (
     <div className="min-h-screen bg-white">
@@ -40,55 +39,38 @@ export default function ServiceApplicationFormPage() {
         <div className="absolute inset-0 bg-white/5 pattern-grid-lg opacity-30 pointer-events-none"></div>
 
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-          <div className="bg-white rounded-3xl shadow-2xl overflow-hidden p-1 lg:p-2">
-            <div className="bg-white rounded-2xl border border-slate-100 overflow-hidden">
-              {naverFormUrl ? (
-                <iframe
-                  src={naverFormUrl}
-                  width="100%"
-                  height="1200"
-                  className="w-full border-0"
-                  title="서비스 이용 신청서"
-                >
-                  로드 중...
-                </iframe>
-              ) : (
-                <div className="p-16 lg:p-24 text-center">
-                  <div className="mb-8 flex justify-center">
-                    <div className="w-20 h-20 rounded-full bg-blue-50 flex items-center justify-center">
-                      <svg
-                        className="h-10 w-10 text-blue-500"
-                        fill="none"
-                        viewBox="0 0 24 24"
-                        stroke="currentColor"
-                      >
-                        <path
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                          strokeWidth={2}
-                          d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"
-                        />
-                      </svg>
-                    </div>
-                  </div>
-                  <h3 className="text-2xl font-bold text-slate-900 mb-3">
-                    신청서 준비 중
-                  </h3>
-                  <p className="text-slate-500 mb-10 max-w-md mx-auto leading-relaxed">
-                    현재 서비스 이용 신청서를 준비하고 있습니다.<br />
-                    관리자에게 문의하여 네이버폼 URL을 설정해주세요.
-                  </p>
+          <div className="bg-white rounded-3xl shadow-2xl overflow-hidden p-8 lg:p-12 text-center">
+            <div className="max-w-2xl mx-auto">
+              <div className="w-24 h-24 bg-blue-50 rounded-full flex items-center justify-center mx-auto mb-8">
+                <svg className="w-12 h-12 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                </svg>
+              </div>
 
-                  <div className="bg-slate-50 rounded-xl p-6 text-left max-w-xl mx-auto border border-slate-200">
-                    <p className="text-xs text-slate-500 font-mono mb-2 uppercase tracking-wider">
-                      Developer Guide
-                    </p>
-                    <div className="font-mono text-sm bg-white p-4 rounded-lg border border-slate-200 text-slate-600 overflow-x-auto">
-                      <span className="text-purple-600">const</span> <span className="text-blue-600">naverFormUrl</span> = <span className="text-green-600">&quot;https://form.naver.com/...&quot;</span>;
-                    </div>
-                  </div>
-                </div>
-              )}
+              <h3 className="text-3xl font-bold text-slate-900 mb-6">
+                서비스 이용 신청서 작성
+              </h3>
+
+              <p className="text-lg text-slate-600 mb-10 leading-relaxed">
+                아래 버튼을 클릭하여 네이버 폼으로 이동하신 후,<br className="hidden sm:block" />
+                신청서를 작성해 주시면 담당자가 빠르게 연락드리겠습니다.
+              </p>
+
+              <a
+                href="https://naver.me/xktkFcrz"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center justify-center px-8 py-4 text-lg font-bold text-white transition-all duration-200 bg-blue-600 rounded-xl hover:bg-blue-700 hover:shadow-lg hover:-translate-y-1 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-600"
+              >
+                <span>신청서 작성하러 가기</span>
+                <svg className="w-5 h-5 ml-2 -mr-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                </svg>
+              </a>
+
+              <p className="mt-8 text-sm text-slate-500">
+                * 새 창에서 네이버 폼이 열립니다.
+              </p>
             </div>
           </div>
 

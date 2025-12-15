@@ -15,6 +15,9 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "E-2pyo 솔루션홈 - 온라인 전자투표 시스템",
   description: "안전하고 편리한 온오프라인 투표 시스템",
+  icons: {
+    icon: "/icon.png",
+  },
 };
 
 export default function RootLayout({
