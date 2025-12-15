@@ -1,6 +1,11 @@
+"use client";
+
+import { useState } from "react";
 import Image from "next/image";
 
 export default function Hero() {
+  const [showProposalAlert, setShowProposalAlert] = useState(false);
+
   return (
     <section className="relative bg-white pt-24 pb-20 lg:pt-32 lg:pb-32 overflow-hidden">
       {/* Background Gradients */}
@@ -24,13 +29,28 @@ export default function Hero() {
               재건축·재개발·리모델링 조합을 위한 전문 투표 플랫폼.<br className="hidden lg:block" />
               안전하고 투명한 의사결정 프로세스를 경험하세요.
             </p>
-            <div className="flex flex-wrap gap-4">
-              <button className="bg-blue-600 text-white px-8 py-4 rounded-xl font-semibold text-lg hover:bg-blue-500 transition-all shadow-lg hover:shadow-blue-500/25">
+            <div className="flex flex-wrap gap-4 items-start">
+              <a
+                href="https://naver.me/xktkFcrz"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-blue-600 text-white px-8 py-4 rounded-xl font-semibold text-lg hover:bg-blue-500 transition-all shadow-lg hover:shadow-blue-500/25 inline-block text-center h-[60px]"
+              >
                 서비스 신청
-              </button>
-              <button className="bg-white text-slate-700 border border-slate-200 px-8 py-4 rounded-xl font-semibold text-lg hover:bg-slate-50 transition-all hover:border-slate-300">
-                제안서 다운로드
-              </button>
+              </a>
+              <div className="flex flex-col items-center">
+                <button
+                  onClick={() => setShowProposalAlert(true)}
+                  className="bg-white text-slate-700 border border-slate-200 px-8 py-4 rounded-xl font-semibold text-lg hover:bg-slate-50 transition-all hover:border-slate-300 h-[60px]"
+                >
+                  제안서 다운로드
+                </button>
+                {showProposalAlert && (
+                  <p className="text-red-500 text-sm mt-2 font-medium">
+                    준비중입니다.
+                  </p>
+                )}
+              </div>
             </div>
           </div>
 

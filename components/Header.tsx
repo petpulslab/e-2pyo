@@ -1,5 +1,6 @@
 "use client";
 
+import { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 
@@ -39,8 +40,10 @@ const menuItems = [
 ];
 
 export default function Header() {
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+
   return (
-    <header className="bg-transparent text-slate-900">
+    <header className="bg-transparent text-slate-900 relative z-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center py-4">
           <div className="flex items-center">
@@ -105,11 +108,70 @@ export default function Header() {
             ))}
           </nav>
 
-          <div>
-            {/* Placeholder for right-side elements like login button if needed */}
+          {/* Right side - Hamburger Menu Button */}
+          <div className="md:hidden flex items-center">
+            <button
+              onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+              className="text-slate-900 p-2 focus:outline-none"
+            >
+              <svg
+                className="w-6 h-6"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                {isMobileMenuOpen ? (
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M6 18L18 6M6 6l12 12"
+                  />
+                ) : (
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M4 6h16M4 12h16M4 18h16"
+                  />
+                )}
+              </svg>
+            </button>
           </div>
         </div>
       </div>
+
+      {/* Mobile Menu */}
+      {isMobileMenuOpen && (
+        <div className="md:hidden absolute top-full left-0 w-full bg-white border-b border-gray-200 shadow-lg py-4 px-4 flex flex-col space-y-4 max-h-[80vh] overflow-y-auto">
+          {menuItems.map((item) => (
+            <div key={item.title} className="border-b border-gray-100 last:border-0 pb-2 last:pb-0">
+              <Link
+                href={item.href}
+                className="block text-slate-900 font-bold text-lg mb-2"
+                onClick={() => setIsMobileMenuOpen(false)}
+              >
+                {item.title}
+              </Link>
+              {item.submenu && item.submenu.length > 0 && (
+                <div className="pl-4 space-y-2">
+                  {item.submenu.map((subItem) => (
+                    <Link
+                      key={subItem.href}
+                      href={subItem.href}
+                      className="flex items-center gap-2 text-gray-600 hover:text-blue-600 py-1"
+                      onClick={() => setIsMobileMenuOpen(false)}
+                    >
+                      <span>{subItem.icon}</span>
+                      <span className="text-sm">{subItem.title}</span>
+                    </Link>
+                  ))}
+                </div>
+              )}
+            </div>
+          ))}
+        </div>
+      )}
     </header>
   );
 }

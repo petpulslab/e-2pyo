@@ -1,6 +1,11 @@
+"use client";
+
+import { useState } from "react";
 import Image from "next/image";
 
 export default function FeatureSection() {
+  const [showLearnMoreAlert, setShowLearnMoreAlert] = useState(false);
+
   return (
     <section className="py-24 lg:py-32 bg-blue-600 overflow-hidden relative">
       {/* Background Pattern - Subtle */}
@@ -27,13 +32,28 @@ export default function FeatureSection() {
                 투명한 운영을 지원합니다.
               </p>
 
-              <div className="flex flex-col sm:flex-row gap-4 pt-4">
-                <button className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-xl font-semibold shadow-lg hover:shadow-blue-600/25 transition-all">
+              <div className="flex flex-col sm:flex-row gap-4 pt-4 items-start">
+                <a
+                  href="https://naver.me/xktkFcrz"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-xl font-semibold shadow-lg hover:shadow-blue-600/25 transition-all inline-block text-center h-[60px]"
+                >
                   무료 체험하기
-                </button>
-                <button className="px-8 py-4 rounded-xl font-semibold text-slate-700 hover:bg-slate-50 border border-slate-200 hover:border-slate-300 transition-all">
-                  자세히 알아보기
-                </button>
+                </a>
+                <div className="flex flex-col items-center w-full sm:w-auto">
+                  <button
+                    onClick={() => setShowLearnMoreAlert(true)}
+                    className="px-8 py-4 rounded-xl font-semibold text-slate-700 hover:bg-slate-50 border border-slate-200 hover:border-slate-300 transition-all w-full sm:w-auto h-[60px]"
+                  >
+                    자세히 알아보기
+                  </button>
+                  {showLearnMoreAlert && (
+                    <p className="text-red-500 text-sm mt-2 font-medium">
+                      준비중입니다.
+                    </p>
+                  )}
+                </div>
               </div>
 
               <ul className="space-y-3 pt-4">
